@@ -11,17 +11,11 @@ class NoChildException(Exception):
     """
     NoChildException is raised by the reproduce() method in the SimpleVirus
     and ResistantVirus classes to indicate that a virus particle does not
-    reproduce. You can use NoChildException as is, you do not need to
-    modify/add any code.
+    reproduce. 
     """
 
-'''
-End helper code
-'''
 
-#
-# PROBLEM 1
-#
+
 class SimpleVirus(object):
 
     """
@@ -29,7 +23,7 @@ class SimpleVirus(object):
     """
     def __init__(self, maxBirthProb, clearProb):
         """
-        Initialize a SimpleVirus instance, saves all parameters as attributes
+        Initializes a SimpleVirus instance, saves all parameters as attributes
         of the instance.        
         maxBirthProb: Maximum reproduction probability (a float between 0-1)        
         clearProb: Maximum clearance probability (a float between 0-1).
@@ -217,12 +211,6 @@ def simulationWithoutDrug(numViruses, maxPop, maxBirthProb, clearProb,
     pylab.legend(loc = 0)
     pylab.show()
         
-
-
-#simulationWithoutDrug(1, 10, 0.1, 0.0, 50)
-#
-# PROBLEM 3
-#
 class ResistantVirus(SimpleVirus):
     """
     Representation of a virus which can have drug resistance.
